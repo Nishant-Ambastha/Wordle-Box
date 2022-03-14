@@ -1,11 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import RN from './wordle-boxes';
-
 
 function App() {
-  
-//console.log(randomNumberGenerator(5, 10));
   return (
     <div className="App">
       <header className="App-header">
