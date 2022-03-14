@@ -1,12 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <input type='number' placeholder='Test npm'></input>
-    </div>
-  );
+function randomNoGenerator(min, max) {
+  if(typeof(max) !== 'number' && typeof(min) !== 'number') {
+    min = 0;  max = 1;
+  }
+ return (Math.random() * (max-min)) + min;
 }
-
-export default App;
+module.exports = randomNoGenerator;
